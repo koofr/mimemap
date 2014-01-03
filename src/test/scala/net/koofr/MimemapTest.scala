@@ -13,6 +13,14 @@ class MimemapTest extends FunSpec with MustMatchers {
       mimeMap("video.mp4") must equal ("video/mp4")
     }
 
+    it("should return mimetype for .JPG") {
+      mimeMap("image.JPG") must equal ("image/jpeg")
+    }
+
+    it("should return mimetype for .JPEG") {
+      mimeMap("image.JPEG") must equal ("image/jpeg")
+    }
+
     it("should return mimetype for .scala") {
       mimeMap("video.scala") must equal ("text/x-scala")
     }

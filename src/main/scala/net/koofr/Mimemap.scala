@@ -196,7 +196,7 @@ class Mimemap {
     Map(knownMimes ++ pairs: _*)
   }
 
-  def getExtension(fileName: String) = fileName.split("\\.").last
+  def getExtension(fileName: String) = fileName.split("\\.").last.toLowerCase
 
   lazy val mimeMap = getMimeMap
 

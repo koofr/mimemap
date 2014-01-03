@@ -9,7 +9,7 @@ object MimemapBuild extends Build {
     settings = Project.defaultSettings ++ Seq(
       name := "mimemap",
       organization := "net.koofr",
-      version := "0.2",
+      version := "0.3",
 
       scalaVersion := "2.10.0",
       crossScalaVersions := Seq("2.9.1", "2.9.2", "2.10.0"),
