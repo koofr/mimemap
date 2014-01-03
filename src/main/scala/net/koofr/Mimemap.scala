@@ -170,7 +170,7 @@ class Mimemap {
       try {
         Some(Source.fromFile(file))
       } catch {
-        case _ => None
+        case _: Exception => None
       }
     ).flatten
   }

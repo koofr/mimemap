@@ -1,9 +1,9 @@
-import org.scalatest.Spec
+import org.scalatest.FunSpec
 import org.scalatest.matchers.MustMatchers
 
 import net.koofr.Mimemap
 
-class MimemapTest extends Spec with MustMatchers {
+class MimemapTest extends FunSpec with MustMatchers {
 
   describe("Mimemap") {
 
